@@ -14,16 +14,18 @@ function Hero() {
         src={ProfilePic}
         alt="author image"
         style={{
-          height: '200px',
           width: '200px',
-          borderRadius: '9999px',
+          height: '200px',
+          objectFit: 'cover',
+          borderRadius: '20px',
         }}
       />
+
       <div>
         <h2 className="text-sm uppercase tracking-widest pb-6 text-gray-500">
           Fullstack React Developer
         </h2>
-        <h1 className="text-3xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-xl lg:text-6xl font-semibold px-10">
           <Typewriter
             words={[
               'Hi the name is Taif Ahmad',
@@ -41,7 +43,6 @@ function Hero() {
           />
         </h1>
       </div>
-
       <nav className="pt-2">
         <Link href="#about">
           <button className="heroNav">About</button>

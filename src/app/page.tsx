@@ -1,7 +1,7 @@
 import Header from '../components/header';
 import Hero from '../components/hero';
 import HeroAnimation from '../components/hero-animation';
-import 
+import About from '../components/about';
 
 export default function Home() {
   return (
@@ -11,7 +11,10 @@ export default function Home() {
       <section id="hero" className="mt-[-90px]">
         <Hero />
       </section>
-      {/* <About /> */}
+
+      <section>
+        <About />
+      </section>
       {/* <Projects /> */}
       {/* <Skills /> */}
       {/* <Experience /> */}
