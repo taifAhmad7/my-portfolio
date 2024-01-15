@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 function Hero() {
   return (
-    <div className="h-screen flex flex-col justify-center space-y-8 text-center items-center overflow-hidden ">
+    <div className="h-screen flex flex-col justify-center space-y-8 text-center items-center overflow-hidden">
       <Image
         src={ProfilePic}
         alt="author image"

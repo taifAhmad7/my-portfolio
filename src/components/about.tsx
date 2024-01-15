@@ -4,7 +4,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="flex flex-col h-screen text-center items-center max-w-3xl mx-auto">
+    <div className="flex flex-col h-screen text-center justify-center items-center">
       <h3 className="uppercase tracking-[20px] text-gray-500 text-xl">About</h3>
       <p className="mt-8 px-4">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quas

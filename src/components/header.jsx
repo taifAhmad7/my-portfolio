@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function Header() {
   return (
-    <header className="sticky top-0 flex flex-row p-5 justify-between max-w-7xl mx-auto z-20">
+    <header className="bg-slate-900 sticky top-0 flex flex-row p-5 justify-between max-w-7xl mx-auto z-20">
       <motion.div
         initial={{
           x: -500,

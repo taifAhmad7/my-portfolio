@@ -2,6 +2,7 @@ import Header from '../components/header';
 import Hero from '../components/hero';
 import HeroAnimation from '../components/hero-animation';
 import About from '../components/about';
+import Projects from '../components/projects';
 
 export default function Home() {
   return (
@@ -12,13 +13,13 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section>
+      <section id="about">
         <About />
       </section>
-      {/* <Projects /> */}
-      {/* <Skills /> */}
-      {/* <Experience /> */}
-      {/* <Contact /> */}
+
+      <section id="projects">
+        <Projects />
+      </section>
     </div>
   );
 }
