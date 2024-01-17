@@ -22,6 +22,16 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/hero.jsx",
+    "src/components/project-card.jsx",
+    "src/components/skill-card.jsx",
+    "src/components/skill.jsx",
+    "src/components/skills.jsx"
+  ],
   "exclude": ["node_modules"]
 }
