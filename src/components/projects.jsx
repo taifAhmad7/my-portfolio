@@ -4,31 +4,17 @@ import ProjectCard from './project-card';
 const projects = [
   {
     name: 'Dashboard App',
-    img: '',
-    projectLink: '#',
-    codeLink: '#',
-    discription: 'skjdfijdf;oasijdf;sdf',
+    image: '/project-1-img.png',
+    codeLink: 'https://github.com/taifAhmad7/the-wild-oasis',
+    projectLink: 'https://the-wild-oasis-nine.vercel.app/',
+    description: 'A Dashboard for hotel room booking',
   },
   {
-    name: 'Food Delivery App',
-    img: '',
-    projectLink: '#',
-    codeLink: '#',
-    discription: 'skjdfijdf;oasijdf;sdf',
-  },
-  {
-    name: 'skdjfsd',
-    img: '',
-    projectLink: '#',
-    codeLink: '#',
-    discription: 'skjdfijdf;oasijdf;sdf',
-  },
-  {
-    name: 'sdjfls',
-    img: '',
-    projectLink: '#',
-    codeLink: '#',
-    discription: 'skjdfijdf;oasijdf;sdf',
+    name: 'Pizza Delivery App',
+    image: '/project-2-img.png',
+    codeLink: 'https://fast-react-pizza-phi.vercel.app/',
+    projectLink: 'https://github.com/taifAhmad7/fast-react-pizza',
+    description: 'A pizza delivery app with cart and crud operations',
   },
 ];
 
@@ -46,7 +32,7 @@ function Projects() {
 
       <div className="grid md:grid-cols-2 justify-items-center max-w-7xl mx-auto gap-x-8 gap-y-12 md:gap-y-20 ">
         {projects.map((project) => (
-          <ProjectCard key={project.name} />
+          <ProjectCard key={project.name} details={{ ...project }} />
         ))}
       </div>
     </div>
