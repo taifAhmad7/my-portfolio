@@ -14,6 +14,7 @@ import { RiSupabaseFill } from 'react-icons/ri';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { SiNextdotjs } from 'react-icons/si';
 import { FaCode } from 'react-icons/fa';
+import { BiLogoTypescript } from 'react-icons/bi';
 
 const iconSize = '25px';
 
@@ -41,6 +42,10 @@ const frontendSkills = [
   {
     tech: 'Tailwind CSS',
     icon: <SiTailwindcss style={{ height: iconSize, width: iconSize }} />,
+  },
+  {
+    tech: 'Typescript',
+    icon: <BiLogoTypescript style={{ height: iconSize, width: iconSize }} />,
   },
 ];
 
@@ -84,12 +89,17 @@ const fullstackSkills = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col mt-56 justify-center items-center">
-      <h3 className="uppercase tracking-[20px] text-gray-500 text-xl">
-        Skills
-      </h3>
+    <div className="flex flex-col mt-36 lg:mt-56 justify-center items-center gap-y-10 lg:gap-y-16">
+      <div className="flex flex-col justify-center items-center gap-y-2 md:gap-y-4">
+        <h3 className="uppercase tracking-[10px]  text-sky-300 text-lg md:text-xl">
+          Skills
+        </h3>
+        <p className="font-bold self-start text-2xl lg:text-4xl text-sky-100">
+          Technologies I work with.
+        </p>
+      </div>
 
-      <div className="flex flex-row justify-start gap-16 mt-24">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-x-8 gap-y-12 gap">
         <SkillCard skills={frontendSkills} title={'Frontend'} />
         <SkillCard skills={backendSkills} title={'Backend'} />
         <SkillCard skills={fullstackSkills} title={'Fullstack'} />

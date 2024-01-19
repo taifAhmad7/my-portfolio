@@ -6,26 +6,42 @@ import HeroAnimation from './hero-animation';
 import Image from 'next/image';
 import ProfilePic from '../../public/my-pic.jpg';
 import Link from 'next/link';
+import Navigation from './navigation';
 
 function Hero() {
   return (
-    <div className="h-screen flex flex-col justify-center space-y-8 text-center items-center overflow-hidden">
-      <Image
-        src={ProfilePic}
-        alt="author image"
-        style={{
-          width: '200px',
-          height: '200px',
-          objectFit: 'cover',
-          borderRadius: '20px',
-        }}
-      />
+    <div className="h-screen flex flex-col gap-28 border-b-slate-600">
+      <Navigation />
 
-      <div>
-        <h2 className="text-sm uppercase tracking-widest pb-6 text-gray-500">
-          Fullstack React Developer
-        </h2>
-        <h1 className="text-xl lg:text-6xl font-semibold px-10">
+      <div className="flex flex-col justify-center items-center gap-14">
+        <Image
+          src={ProfilePic}
+          alt="author image"
+          style={{
+            width: '200px',
+            height: '200px',
+            objectFit: 'cover',
+            borderRadius: '20px',
+          }}
+        />
+
+        <div className="flex flex-col justify-center items-center gap-8">
+          <h1 className="text-xl lg:text-6xl font-semibold px-10 text-sky-200">
+            Hi, I am Taif Ahmad
+          </h1>
+          <h2 className="text-lg uppercase tracking-widest text-sky-300 shadow-sky-200">
+            Fullstack React Developer
+          </h2>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Hero;
+
+{
+  /* <h1 className="text-xl lg:text-6xl font-semibold px-10">
           <Typewriter
             words={[
               'Hi the name is Taif Ahmad',
@@ -41,25 +57,5 @@ function Hero() {
             // onLoopDone={handleDone}
             // onType={handleType}
           />
-        </h1>
-      </div>
-      <nav className="pt-2">
-        <Link href="#about">
-          <button className="heroNav">About</button>
-        </Link>
-        <Link href="#projects">
-          <button className="heroNav">Projects</button>
-        </Link>
-        <Link href="#skills">
-          <button className="heroNav">Skills</button>
-        </Link>
-        <Link href="#experience">
-          <button className="heroNav">Experience</button>
-        </Link>
-      </nav>
-      {/* <HeroAnimation /> */}
-    </div>
-  );
+        </h1> */
 }
-
-export default Hero;

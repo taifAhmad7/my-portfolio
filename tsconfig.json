@@ -31,7 +31,8 @@
     "src/components/project-card.jsx",
     "src/components/skill-card.jsx",
     "src/components/skill.jsx",
-    "src/components/skills.jsx"
+    "src/components/skills.jsx",
+    "src/components/projects.jsx"
   ],
   "exclude": ["node_modules"]
 }
