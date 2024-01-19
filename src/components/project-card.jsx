@@ -15,7 +15,7 @@ function ProjectCard({ details }) {
         height={500}
       />
 
-      <div className="flex flex-col p-7 gap-y-6">
+      <div className="flex flex-col h-48 justify-between p-7">
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-sky-200">{name}</h3>
           <p className="text-sm text-sky-100">{description}</p>
