@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
-import HeroAnimation from './hero-animation';
 import Image from 'next/image';
 import ProfilePic from '../../public/my-pic.jpg';
 import Link from 'next/link';
@@ -39,23 +37,3 @@ function Hero() {
 }
 
 export default Hero;
-
-{
-  /* <h1 className="text-xl lg:text-6xl font-semibold px-10">
-          <Typewriter
-            words={[
-              'Hi the name is Taif Ahmad',
-              'Fullstack React Developer',
-              'Changing ideas and UI into code',
-            ]}
-            loop={true}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-            // onLoopDone={handleDone}
-            // onType={handleType}
-          />
-        </h1> */
-}
