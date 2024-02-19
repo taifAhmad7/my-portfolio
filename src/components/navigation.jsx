@@ -57,9 +57,9 @@ function Navigation() {
             <Link href="#contact">Contact</Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="#blog">Blog</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="navbar-end">
